@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1028">
+
+  <title>Friendship Forever | Rashid Hussain Mayyari</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="confettiCanvas"></canvas>
+  <div id="floatingHearts" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="bi bi-heart-fill"></i> Forever Friends
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-2">
+        <button class="icon-btn" id="themeToggle"
+                aria-label="Switch color theme" title="Switch theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+
+        <button class="icon-btn" id="musicToggle"
+                aria-label="Play background music" title="Background music">
+          <i class="bi bi-music-note-beamed"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav ms-auto me-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#friendship">Friendship</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quotes">Quotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#letter">Love Letter</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-7 hero-content">
+          <span class="eyebrow">
+            <i class="bi bi-stars"></i> A LITTLE WEBSITE, A LOT OF LOVE
+          </span>
+
+          <h1>
+            Friendship is<br>
+            <span class="gradient-text">Always Beautiful.</span>
+          </h1>
+
+          <p class="hero-text">
+            Life becomes brighter when we have friends who make us laugh,
+            understand our silence, and stand beside us through everything.
+            This little corner of the internet celebrates that special bond.
+          </p>
+
+          <div class="hero-signature">
+            Created with <span>♥</span> by
+            <strong>Rashid Hussain Mayyari</strong>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#letter" class="btn primary-btn">
+              Open Your Letter <i class="bi bi-envelope-heart"></i>
+            </a>
+
+            <button class="btn secondary-btn" id="celebrateBtn">
+              Celebrate! <i class="bi bi-stars"></i>
+            </button>
+          </div>
+
+          <div class="hero-note mt-4">
+            <i class="bi bi-heart-fill"></i>
+            Made to celebrate the friends who make life special.
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="portrait-wrap">
+            <div class="portrait-ring"></div>
+            <div class="portrait-card">
+              <img src="WhatsApp Image 2026-10-10 at 9.04.08 AM.jpeg" alt="Rashid Hussain Mayyari"
+                   onerror="this.onerror=null;this.src='https://placehold.co/500x650/171b3d/ffffff?text=Your+Photo';">
+            </div>
+
+            <div class="floating-badge badge-top">
+              <i class="bi bi-heart-fill"></i> Good vibes
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <i class="bi bi-stars"></i> Forever friends
+            </div>
+          </div>
+
+          <p class="portrait-caption">Rashid Hussain Mayyari</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#friendship" class="scroll-hint" aria-label="Scroll down">
+      <i class="bi bi-chevron-double-down"></i>
+    </a>
+  </header>
+
+  <!-- Friendship features -->
+  <section class="section" id="friendship">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">THE LITTLE THINGS MATTER</span>
+        <h2>What Makes Friendship <span class="gradient-text">Special?</span></h2>
+        <p>Three beautiful reasons to appreciate your friends.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon pink"><i class="bi bi-heart-fill"></i></div>
+            <h3>Unconditional Care</h3>
+            <p>A real friend respects you, supports you, and accepts you as you are.</p>
+            <span class="card-number">01 / CARE</span>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon purple"><i class="bi bi-emoji-laughing-fill"></i></div>
+            <h3>Endless Laughter</h3>
+            <p>The smallest moments can become the funniest memories with a friend.</p>
+            <span class="card-number">02 / JOY</span>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon blue"><i class="bi bi-people-fill"></i></div>
+            <h3>Always Connected</h3>
+            <p>Even when life takes us different ways, friendship can keep us close.</p>
+            <span class="card-number">03 / TRUST</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive quote -->
+  <section class="quote-section" id="quotes">
+    <div class="container">
+      <div class="quote-card text-center">
+        <div class="quote-mark">“</div>
+        <span class="eyebrow">A LITTLE DAILY INSPIRATION</span>
+
+        <blockquote id="quoteText" aria-live="polite">
+          A true friend makes the good times better and the hard times easier.
+        </blockquote>
+
+        <p class="quote-author" id="quoteAuthor">— A thought about friendship</p>
+
+        <button class="btn primary-btn mt-3" id="newQuoteBtn">
+          Another Beautiful Quote <i class="bi bi-arrow-right"></i>
+        </button>
+
+        <button class="btn secondary-btn mt-3" id="copyQuoteBtn">
+          <i class="bi bi-copy"></i> Copy Quote
+        </button>
+        <p id="copyStatus" class="small mt-2" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Friendship letter -->
+  <section class="section letter-section" id="letter">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">SOMETHING FROM THE HEART</span>
+        <h2>A Letter Full of <span class="gradient-text">Friendship</span></h2>
+        <p>There is a little message waiting for you.</p>
+      </div>
+
+      <div class="letter-card text-center">
+        <div class="envelope-icon"><i class="bi bi-envelope-heart-fill"></i></div>
+        <h3>Dear Wonderful Friend,</h3>
+
+        <p class="letter-preview">
+          Some people make our world more beautiful simply by being in it.
+        </p>
+
+        <button class="btn primary-btn" id="letterBtn" aria-expanded="false">
+          Open My Letter <i class="bi bi-envelope-open"></i>
+        </button>
+
+        <div class="letter-content" id="letterContent" hidden>
+          <p>
+            Thank you for the smiles, the memories, the conversations,
+            and the moments that make life special. Friendship is not
+            about being perfect. It is about being genuine, caring,
+            forgiving, and showing up when it matters.
+          </p>
+
+          <p>
+            I hope your days are full of laughter, your dreams keep growing,
+            and you always find people who value your heart.
+          </p>
+
+          <p class="letter-ending">
+            Happy Friendship Day! 💜<br>
+            With warm wishes,<br>
+            <strong>Rashid Hussain Mayyari</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final celebration -->
+  <section class="final-section text-center">
+    <div class="container">
+      <div class="final-heart"><i class="bi bi-hearts"></i></div>
+      <h2>Friends Make Life <span class="gradient-text">Wonderful.</span></h2>
+      <p>Send a little kindness into someone's day. They might need it more than you know.</p>
+
+      <button class="btn primary-btn" id="finalCelebrateBtn">
+        Spread Some Love <i class="bi bi-heart-fill"></i>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Designed with <span class="heart">♥</span> by <strong>Rashid Hussain Mayyari</strong></p>
+      <small>Made for friendship, memories, and beautiful moments.</small>
+      <p class="copyright">© <span id="year"></span> Rashid Hussain Mayyari</p>
+    </div>
+  </footer>
+
+  <!-- Optional local background music file -->
+  <audio id="backgroundMusic" src="lolivac-tu-mirada-306726.mp3" loop preload="none"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
